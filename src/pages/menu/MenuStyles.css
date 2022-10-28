@@ -1,0 +1,26 @@
+.menu{
+    width: 100%;
+    margin-top: 90px;
+}
+
+.menu-categ{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-categ li{
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+.menu-categ li:hover{
+    color: rgb(167, 16, 16);
+}
+.menu-pizza{
+    min-height: 900px;
+    height: 100%;
+}

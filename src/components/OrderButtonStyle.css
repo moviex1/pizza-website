@@ -1,0 +1,21 @@
+.order-button{
+      padding: 10px 20px;
+      font-size: 2rem;
+      border: none;
+      background-color: rgb(190, 10, 3);
+      border-radius: 14px;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+  }
+  
+  .order-button:hover{
+    filter:brightness(120%)
+  }
+
+
+  @media screen and (max-width:350px){
+    .order-button{
+        font-size:1.25rem;
+    }
+  }
