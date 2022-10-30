@@ -1,27 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import './NavbarStyles.css';
-import CartIcon from './CartIcon';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
+import CartIcon from './CartIcon';
+import './NavbarStyles.css';
 
 
-const Navbar = () => {
-    const [navbar, setNavbar] = useState(false);
-    const showNavbar = ()=> {
-    if(window.scrollY >= -10){
-            setNavbar(true);
-        } else{
-            setNavbar(false);
-        }
-    }
-    useEffect(()=>{
-        window.addEventListener('scroll', showNavbar);
-
-        return () =>{
-            window.removeEventListener('scroll', showNavbar)
-        }
-    }, [])
+const Navbar = () => { 
   return (
-    <div className={navbar ? 'nav active' : 'nav'}>
+    <div className='nav active'>
         <img className='logo' src="https://mir-s3-cdn-cf.behance.net/projects/max_808/17dd5275338155.Y3JvcCwyMjg0LDE3ODYsMCw1Ng.png" alt="" width="90px"/>
 
         <ul className='nav-categ'>

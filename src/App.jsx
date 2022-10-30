@@ -1,13 +1,11 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './AppStyles.css';
 import Footer from './components/Footer/Footer';
-import Home from './pages/home/Home';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import Menu from './pages/menu/Menu';
 import About from './pages/about/About';
 import Gallery from './pages/gallery/Gallery';
-import { useEffect } from 'react';
-import axios from 'axios';
+import Home from './pages/home/Home';
+import Menu from './pages/menu/Menu';
 
 
 function App() {  
